@@ -19,7 +19,7 @@ const app = createApp({
                     const {token, expired} = res.data;
                     console.log(token, expired);
                     document.cookie = `davidToken=${token}; expires=${new Date(expired)}`;
-                    window.location = './products.html';
+                    window.location = './products_week4.html';
                 })
                 .catch(err => {
                     console.log(err);
